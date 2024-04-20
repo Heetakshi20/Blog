@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Blog</title>
+	<link rel="stylesheet" href="#">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: georgia;
+			position: relative;
+		}
+		.navbar1 {
+			background: rgb(173, 67, 67);
+		}
+		.navbar1 a {
+			color: white;
+		}
+		.navbar2 {
+			background: rgba(251, 231, 224, 0.689);
+			text-align: center;
+			position: relative;
+			top: 25px;
+		}
+        .content ul {
+			display: inline-flex;
+			margin: 10px 200px;
+		}
+		.content ul li {
+			list-style: none;
+			margin: 12px 12px;
+			font-size: 25px;
+		}
+		.content ul li a {
+			text-decoration: none;
+			color: black;
+			padding: 8px 18px;
+			transition: 0.9s;
+		}
+		.content a:hover {
+			background: rgba(212, 207, 207, 0.603);
+			color: rgb(173, 67, 67);
+			border-radius: 8px;
+        }
+
+        .container1 {
+			width: 300px;
+			height: 400px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 200px;
+    	}
+    	.image-half {
+			height: 50%;
+			overflow: hidden;
+   		 }
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container2 {
+			width: 300px;
+			height: 600px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 600px;
+			bottom: 400px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container3 {
+			width: 300px;
+			height: 650px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 1000px;
+			bottom: 1000px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container4 {
+			width: 300px;
+			height: 650px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 200px;
+			bottom: 1200px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container5 {
+			width: 300px;
+			height: 500px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 600px;
+			bottom: 1645px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container6 {
+			width: 300px;
+			height: 530px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 1000px;
+			bottom: 2088px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container7 {
+			width: 300px;
+			height: 400px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 200px;
+			bottom: 2178px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container8 {
+			width: 300px;
+			height: 400px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 600px;
+			bottom: 2520px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+		.container9 {
+			width: 300px;
+			height: 400px;
+			border: 2px solid #333;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			left: 1000px;
+			bottom: 2830px;
+		}
+		.image-half {
+			height: 50%;
+			overflow: hidden;
+		}
+		.image-half img {
+			width: 100%;
+			height: auto;
+		}
+		.info-half {
+			height: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #f9f9f9;
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar1">
+			<ul>
+				<li><a href="#"><i class="fi fi-brands-facebook"></i></i> </a></li>
+				<li><a href="#"><i class="fi fi-brands-instagram"></i></i> </a></li>
+				<li><a href="#"><i class="fi fi-brands-twitter"></i></i> </a></li>
+				<li><a href="#"><i class="fi fi-brands-pinterest"></i></i></i> </a></li>	
+			</ul>	
+	</div>
+	<div class="navbar2">
+		<div class="content">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="myblog.html">My Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div><br><br>
+    <h1 style="text-align: center;">The Feed</h1></div>
+    <br><br>
+    <div class="container1">
+        <div class="image-half">
+            <img src="img/B.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container2">
+        <div class="image-half">
+            <img src="img/book.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container3">
+        <div class="image-half">
+            <img src="img/plant.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container4">
+        <div class="image-half">
+            <img src="img/clothes.webp" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container5">
+        <div class="image-half">
+            <img src="img/window.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container6">
+        <div class="image-half">
+            <img src="img/street.jpeg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container7">
+        <div class="image-half">
+            <img src="img/S7.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container8">
+        <div class="image-half">
+            <img src="img/S2.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>
+	<div class="container9">
+        <div class="image-half">
+            <img src="img/Pot.jpg" alt="Image">
+        </div>
+        <div class="info-half">
+            <h2>Information about the Image</h2>
+            <p>This is where you can provide information about the image. It can include details such as its description, where it was taken, who took it, etc.</p>
+        </div>
+    </div>	
+</body>
+</html>
